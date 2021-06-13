@@ -1,0 +1,210 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+  outline: none;
+  border: none;
+}
+
+/* to change sun moon icon  */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.dark .attribution {
+  color: white;
+}
+
+body {
+  background-color: hsl(0, 0%, 98%);
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+.dark {
+  background-color: hsl(237, 14%, 26%);
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0% 2%;
+}
+
+header {
+  height: 30vh;
+  width: 100%;
+  background-image: url(./images/bg-mobile-light.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 2rem;
+  position: relative;
+}
+
+.dark header {
+  background-image: url(./images/bg-mobile-dark.jpg);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  font-size: 2rem;
+  letter-spacing: 20px;
+  color: hsl(0, 0%, 98%);
+}
+
+.container input {
+  border-radius: 5px;
+  padding: 2% 8%;
+  font-size: 1.2rem;
+  margin: 2rem auto;
+  width: 80%;
+}
+
+.dark .container input {
+  background-color: hsl(234, 11%, 52%);
+  color: hsl(0, 0%, 98%);
+}
+
+.container ul {
+  position: relative;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 10px 10px 5px #aaaaaa;
+  margin-bottom: 2rem;
+  margin-top: -2rem;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 2;
+  max-width: 800px;
+  width: 80%;
+}
+
+.dark .container ul {
+  background-color: hsl(234, 11%, 52%);
+  box-shadow: 10px 10px 5px hsl(235, 21%, 11%);
+}
+
+.container ul li {
+  border-bottom: 1px solid hsl(236, 9%, 61%);
+  padding: 0.8rem 1rem;
+  list-style-type: none;
+}
+
+.container ul li:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.dark .container ul li {
+  color: white;
+}
+
+.container ul li .check {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  padding: 0.2rem;
+  margin-right: 10px;
+  border: 0.5px solid hsl(236, 9%, 61%);
+}
+
+.checked {
+  background-image: linear-gradient(
+    to bottom right,
+    hsl(192, 100%, 67%),
+    hsl(280, 87%, 65%)
+  );
+}
+
+.container ul li .cross {
+  border: none;
+  float: right;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.container ul .list-info {
+  border: none;
+  color: hsl(235, 19%, 35%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: center;
+}
+
+#clearcompleted {
+  cursor: pointer;
+}
+
+#category {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  border-radius: 5px;
+  padding: 0.4rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+}
+
+.dark #category {
+  color: hsl(235, 21%, 11%);
+}
+
+#category p {
+  margin: 0rem 1rem;
+}
+
+.attribution {
+  position: fixed;
+  bottom: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+#category p {
+  cursor: pointer;
+}
+
+.selected {
+  color: hsl(220, 98%, 61%);
+}
+
+.dark .selected {
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+  color: #aaaaaa;
+}
+
+.note {
+  text-align: center;
+  color: black;
+  font-size: 0.9rem;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    background-image: url(./images/bg-desktop-light.jpg);
+  }
+  .dark header {
+    background-image: url(./images/bg-desktop-dark.jpg);
+  }
+}

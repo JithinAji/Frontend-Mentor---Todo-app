@@ -145,10 +145,4 @@ let myApp = (function () {
       toggleLight.src = "./images/icon-sun.svg";
     }
   });
-
-  //to add button
-  document.querySelector("button").addEventListener("click", () => {
-    addNewTodo(todoInput.value);
-    todoInput.value = "";
-  });
 })();

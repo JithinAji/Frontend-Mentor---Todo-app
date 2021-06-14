@@ -74,20 +74,6 @@ header h1 {
   z-index: 3;
 }
 
-button {
-  background-color: black;
-  position: absolute;
-  right: 5px;
-  bottom: 10px;
-  color: #aaaaaa;
-  font-size: 2rem;
-  font-style: bold;
-  padding: 1% 1rem;
-  border-radius: 100px;
-  margin-left: -100px;
-  z-index: 3;
-}
-
 .dark .container input {
   background-color: hsl(234, 11%, 52%);
   color: hsl(0, 0%, 98%);
@@ -233,8 +219,5 @@ button {
   }
   .dark header {
     background-image: url(./images/bg-desktop-dark.jpg);
-  }
-  button {
-    display: none;
   }
 }

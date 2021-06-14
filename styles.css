@@ -212,6 +212,18 @@ button {
   font-size: 0.9rem;
 }
 
+.dropzone {
+  display: flex;
+}
+
+.dropzone p{
+  word-break: break-word;
+}
+
+.dropzone .cross {
+  margin-left: auto;
+}
+
 @media only screen and (min-width: 768px) {
   header {
     background-image: url(./images/bg-desktop-light.jpg);

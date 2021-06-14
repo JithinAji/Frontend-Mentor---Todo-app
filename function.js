@@ -15,9 +15,8 @@ let myApp = (function () {
     crossImage.className = "cross";
     crossImage.src = "./images/icon-cross.svg";
 
-    let content = `${str}`;
-
-    let node = document.createTextNode(content);
+    let node = document.createElement("p");
+    node.textContent = `${str}`;
     para.appendChild(checkImage);
     para.appendChild(node);
     para.appendChild(crossImage);

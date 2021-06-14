@@ -25,7 +25,8 @@
 body {
   background-color: hsl(0, 0%, 98%);
   overflow-x: hidden;
-  min-height: 100vh;
+  min-height: 660px;
+  position: relative;
 }
 
 .dark {
@@ -45,7 +46,6 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 2rem;
-  position: relative;
 }
 
 .dark header {
@@ -76,6 +76,9 @@ header h1 {
 
 button {
   background-color: black;
+  position: absolute;
+  right: 5px;
+  bottom: 10px;
   color: #aaaaaa;
   font-size: 2rem;
   font-style: bold;
@@ -216,7 +219,7 @@ button {
   display: flex;
 }
 
-.dropzone p{
+.dropzone p {
   word-break: break-word;
 }
 

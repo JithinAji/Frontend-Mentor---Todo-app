@@ -75,6 +75,7 @@ let myApp = (function () {
       });
       document.querySelectorAll(".checked").forEach((elem) => {
         elem.parentElement.classList.add("hidden");
+        console.log(elem.parentElement.classList);
       });
     } else {
       document.querySelectorAll(".check").forEach((elem) => {
